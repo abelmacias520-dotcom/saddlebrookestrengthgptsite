@@ -1,0 +1,10 @@
+**/node_modules/
+**/dist/
+**/.sites-runtime/
+**/.vinext/
+**/.vite/
+**/.env
+**/.env.*
+!**/.env.example
+.DS_Store
+npm-debug.log*

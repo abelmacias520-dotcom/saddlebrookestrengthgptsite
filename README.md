@@ -14,7 +14,7 @@ Each project is preserved as an independent deployable app, matching the current
 
 ## Local development
 
-Open the project you want to run, then:
+Open the project you want to run, then install its dependencies and start the development server:
 
 ```bash
 npm ci
@@ -27,4 +27,4 @@ To create a production build:
 npm run build
 ```
 
-Generated dependencies, build output, and local runtime caches are intentionally excluded.
+Generated dependencies, build output, and local runtime caches are intentionally excluded from this repository.
