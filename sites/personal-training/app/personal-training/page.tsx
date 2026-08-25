@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteHeader from "../SiteHeader";
 
 const benefits = [
   {
@@ -25,9 +26,8 @@ const benefits = [
 
 const fitList = [
   "You want to feel stronger and more capable in everyday life",
-  "You need a clear plan instead of guessing what to do",
-  "You are returning to exercise and want a sensible starting point",
-  "You want coaching that respects your limitations, history, and goals",
+  "You want a clear, sensible plan for starting—or restarting—exercise",
+  "You want coaching that respects your history, limitations, and goals.",
 ];
 
 const trainingAreas = [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Stronger for What Matters.",
     description: "One-on-One Personal Training | Saddlebrooke Strength",
-    url: "https://saddlebrooke-personal-training.abelmacias520.chatgpt.site/personal-training",
+    url: "https://saddlebrookestrength.com/personal-training",
     images: [
       {
         url: "https://saddlebrooke-personal-training.abelmacias520.chatgpt.site/og.png",
@@ -107,28 +107,7 @@ export default function PersonalTrainingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
-      <header className="site-header">
-        <a
-          className="brand"
-          href="https://saddlebrookestrength.com/"
-          aria-label="Saddlebrooke Strength home"
-        >
-          <img src="/sbs-icon.webp" alt="Saddlebrooke Strength SBS icon" />
-          <span>Strength • Balance • Independence</span>
-        </a>
-        <nav aria-label="Primary navigation">
-          <a href="https://saddlebrookestrength.com/#about">About</a>
-          <a href="https://saddlebrookestrength.com/#programs">Programs</a>
-          <a href="https://saddlebrookestrength.com/#reviews">Reviews</a>
-          <a href="https://saddlebrookestrength.com/#contact">Contact</a>
-          <a
-            className="nav-button"
-            href="https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7"
-          >
-            Book a Phone Call
-          </a>
-        </nav>
-      </header>
+      <SiteHeader currentPage="personal-training" />
 
       <div className="breadcrumb" aria-label="Breadcrumb">
         <a href="https://saddlebrookestrength.com/">Home</a>
@@ -159,7 +138,7 @@ export default function PersonalTrainingPage() {
                 className="button button-primary"
                 href="https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7"
               >
-                Book a Phone Call
+                Schedule a Free 15-Minute Call
               </a>
               <a className="call-link" href="tel:+12624504794">
                 Call Saddlebrooke Strength <span aria-hidden="true">→</span>
@@ -184,9 +163,8 @@ export default function PersonalTrainingPage() {
             <p className="eyebrow eyebrow-green">Training with purpose</p>
             <h2>Your plan starts with you.</h2>
             <p>
-              We begin with what you want to do more confidently and how your
-              body moves today. From there, we build a practical plan that
-              progresses at a pace that fits you.
+              We start with your goals and current movement, then build a
+              practical plan at your pace.
             </p>
           </div>
 
@@ -197,8 +175,7 @@ export default function PersonalTrainingPage() {
                 <p>Discover</p>
                 <h3>Talk through your goals</h3>
                 <small>
-                  Discuss your health history, schedule, experience, and the
-                  activities that matter most to you.
+                  Your goals, health history, schedule, and experience.
                 </small>
               </div>
             </li>
@@ -208,8 +185,7 @@ export default function PersonalTrainingPage() {
                 <p>Assess</p>
                 <h3>Establish your baseline</h3>
                 <small>
-                  Complete your InBody and grip tests along with movement and
-                  mobility assessments.
+                  InBody, grip, movement, and mobility testing.
                 </small>
               </div>
             </li>
@@ -219,8 +195,8 @@ export default function PersonalTrainingPage() {
                 <p>Train + track</p>
                 <h3>Build steady progress</h3>
                 <small>
-                  Follow personalized flexibility, strength, and balance
-                  programs with nutrition coaching and regular check-ins.
+                  Flexibility, strength, balance, nutrition coaching, and
+                  check-ins.
                 </small>
               </div>
             </li>
@@ -231,10 +207,6 @@ export default function PersonalTrainingPage() {
           <div>
             <p className="eyebrow eyebrow-green">Built around your needs</p>
             <h2 id="training-heading">What your program includes.</h2>
-            <p>
-              We establish a clear baseline, build your individualized exercise
-              plan, and support the habits that move you toward your goals.
-            </p>
           </div>
           <ol className="training-grid">
             {trainingAreas.map((area, index) => (
@@ -254,6 +226,11 @@ export default function PersonalTrainingPage() {
 
           <div className="coach-stack">
             <article className="coach-card coach-card-abel">
+              <img
+                className="coach-photo"
+                src="/abel.jpg"
+                alt="Abel Macias, owner and personal trainer"
+              />
               <div className="coach-number">01</div>
               <div className="coach-content">
                 <h3>Abel Macias</h3>
@@ -265,6 +242,11 @@ export default function PersonalTrainingPage() {
             </article>
 
             <article className="coach-card">
+              <img
+                className="coach-photo"
+                src="/tim.jpg"
+                alt="Tim Rochford, personal trainer"
+              />
               <div className="coach-number">02</div>
               <div className="coach-content">
                 <h3>Tim Rochford, MS</h3>
@@ -297,8 +279,8 @@ export default function PersonalTrainingPage() {
             <p className="eyebrow">Ready when you are</p>
             <h2>Let’s build strength you can use.</h2>
             <p>
-              Tell us what you want to feel more confident doing, and we’ll
-              help you choose the right starting point.
+              Tell us what you want to feel more confident doing, and we’ll help
+              you begin.
             </p>
           </div>
           <div>
@@ -306,7 +288,7 @@ export default function PersonalTrainingPage() {
               className="button button-light"
               href="https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7"
             >
-              Book a Phone Call
+              Schedule a Free 15-Minute Call
             </a>
             <a className="footer-call" href="tel:+12624504794">
               Call Saddlebrooke Strength

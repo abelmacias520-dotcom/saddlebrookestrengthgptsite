@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./site-header.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cardio-kickboxing-mockup.abelmacias520.chatgpt.site"),
-  title: "Cardio Kickboxing Homepage Mockup",
+  title: "Group Classes | SaddleBrooke Strength",
   description:
-    "A homepage concept for SaddleBrooke Strength small-group classes.",
+    "Beginner-friendly Cardio Kickboxing and Ageless Jiu-Jitsu at SaddleBrooke Strength. Your first class is free.",
   openGraph: {
     title: "Small-Group Classes at SaddleBrooke Strength",
     description:
-      "Cardio Kickboxing and Ageless Jiu-Jitsu for adults 55+. First class free.",
+      "Beginner-friendly Cardio Kickboxing and Ageless Jiu-Jitsu. First class free.",
     images: [
       {
         url: "https://cardio-kickboxing-mockup.abelmacias520.chatgpt.site/og.png",
@@ -23,12 +24,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Small-Group Classes at SaddleBrooke Strength",
     description:
-      "Cardio Kickboxing and Ageless Jiu-Jitsu for adults 55+. First class free.",
+      "Beginner-friendly Cardio Kickboxing and Ageless Jiu-Jitsu. First class free.",
     images: ["https://cardio-kickboxing-mockup.abelmacias520.chatgpt.site/og.png"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/sbs-icon.webp",
+    shortcut: "/sbs-icon.webp",
   },
 };
 
@@ -39,6 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="codex-preview" content="development" />
+      </head>
       <body>{children}</body>
     </html>
   );

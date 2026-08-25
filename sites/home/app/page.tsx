@@ -1,4 +1,4 @@
-import MenuDropdown from "./MenuDropdown";
+import SiteHeader from "./SiteHeader";
 
 const bookingUrl =
   "https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7";
@@ -8,32 +8,32 @@ const programs = [
     number: "01",
     title: "Personal Training",
     description:
-      "One-on-one coaching built around your goals, with movement assessments, strength, balance, flexibility, and nutrition support.",
-    link: "https://saddlebrooke-personal-training.abelmacias520.chatgpt.site",
+      "One-on-one coaching for strength, balance, mobility, flexibility, and nutrition.",
+    link: "https://saddlebrookestrength.com/personal-training",
     action: "Explore Personal Training",
   },
   {
     number: "02",
     title: "Golf Fitness",
     description:
-      "Build the mobility, rotation, stability, and strength your game demands so you can play with greater confidence.",
-    link: "https://saddlebrooke-golf-fitness.abelmacias520.chatgpt.site",
+      "Build golf-ready mobility, rotation, balance, strength, and endurance.",
+    link: "https://saddlebrookestrength.com/golf-fitness",
     action: "Explore Golf Fitness",
   },
   {
     number: "03",
     title: "Group Classes",
     description:
-      "Welcoming small-group classes that build cardio fitness, coordination, balance, strength, and confidence.",
-    link: "https://cardio-kickboxing-mockup.abelmacias520.chatgpt.site/group-classes",
+      "Welcoming classes for cardio fitness, coordination, balance, and confidence.",
+    link: "https://saddlebrookestrength.com/group-classes",
     action: "View Group Classes",
   },
   {
     number: "04",
     title: "InBody Testing",
     description:
-      "Track body composition, muscle balance, and grip strength with an InBody 380 and included InGrip test.",
-    link: "https://saddlebrooke-inbody.abelmacias520.chatgpt.site",
+      "Track muscle, body fat, body water, balance, and grip strength.",
+    link: "https://saddlebrookestrength.com/inbody-testing",
     action: "Learn About InBody Testing",
   },
 ];
@@ -41,19 +41,19 @@ const programs = [
 const reviews = [
   {
     quote:
-      "He really listens to your goals and adjusts the exercises based on your capabilities. He also makes sure you use proper form to avoid injuries.",
+      "He really listens to your goals and adjusts the exercises based on your capabilities.",
     name: "Debbi Reecer",
     source: "Nextdoor · SaddleBrooke",
   },
   {
     quote:
-      "Abel is great in modifying your plan that will still meet your goals. And, very importantly, Abel is very easy and enjoyable to work with.",
+      "Abel is great in modifying your plan that will still meet your goals.",
     name: "Gary Sorensen",
     source: "Nextdoor · SaddleBrooke",
   },
   {
     quote:
-      "Every session was beneficial to me learning how to safely workout with machines and free weights in order to be able to feel confident when I go to the gym on my own.",
+      "Every session was beneficial to me learning how to safely workout with machines and free weights.",
     name: "Laura Meder",
     source: "Google",
   },
@@ -64,7 +64,7 @@ export default function Home() {
     <main>
       <a
         className="announcement-banner"
-        href="https://cardio-kickboxing-mockup.abelmacias520.chatgpt.site/group-classes"
+        href="https://saddlebrookestrength.com/group-classes"
         aria-label="New cardio kickboxing class. First class free. View class details."
       >
         <span className="announcement-banner__badge">New</span>
@@ -76,13 +76,7 @@ export default function Home() {
         </span>
       </a>
 
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Saddlebrooke Strength home">
-          <img src="/sbs-icon.webp" alt="" width="68" height="68" />
-          <span className="brand__tagline">Strength · Balance · Independence</span>
-        </a>
-        <MenuDropdown programs={programs} bookingUrl={bookingUrl} />
-      </header>
+      <SiteHeader currentPage="home" />
 
       <section className="hero" id="top">
         <div className="hero__content">
@@ -164,9 +158,8 @@ export default function Home() {
             <p className="eyebrow">How we coach</p>
             <h2>A smarter, more personal way to train.</h2>
             <p>
-              You do not need to be fit before you begin. We start with your goals
-              and current ability, then build a plan that feels challenging,
-              achievable, and relevant to everyday life.
+              We start with your goals and current ability, then build a practical
+              plan that grows with you.
             </p>
           </div>
           <div className="approach__steps">
@@ -175,8 +168,7 @@ export default function Home() {
               <div>
                 <h3>Start with a clear baseline</h3>
                 <p>
-                  Assessments help us understand how you move, where you feel
-                  limited, and what matters most to you.
+                  See how you move and what matters most.
                 </p>
               </div>
             </article>
@@ -185,8 +177,7 @@ export default function Home() {
               <div>
                 <h3>Train with purpose</h3>
                 <p>
-                  Every exercise has a reason and can be adjusted to your comfort,
-                  ability, and goals.
+                  Adjust every exercise to your comfort, ability, and goals.
                 </p>
               </div>
             </article>
@@ -195,8 +186,7 @@ export default function Home() {
               <div>
                 <h3>Build lasting confidence</h3>
                 <p>
-                  Progress is measured by what you can do more comfortably,
-                  confidently, and independently.
+                  Track what feels easier and more confident.
                 </p>
               </div>
             </article>
@@ -209,8 +199,7 @@ export default function Home() {
           <p className="eyebrow eyebrow--gold">Meet your trainers</p>
           <h2>Experienced coaching. Personal attention.</h2>
           <p>
-            Two trainers with a shared commitment to helping you move well, build
-            confidence, and stay active.
+            Personal attention from two experienced trainers.
           </p>
         </div>
 
@@ -227,10 +216,8 @@ export default function Home() {
               <p className="trainer-card__role">Owner &amp; Personal Trainer</p>
               <h3>Abel Macias</h3>
               <p className="trainer-card__bio">
-                Abel specializes in functional strength, balance, mobility,
-                flexibility, and golf fitness. He creates practical programs that
-                meet clients where they are and help them move with greater
-                confidence in everyday life.
+                Abel builds practical programs for strength, balance, mobility,
+                flexibility, and golf fitness—meeting each client where they are.
               </p>
               <ul className="credential-list" aria-label="Abel Macias certifications">
                 <li>NASM Certified Personal Trainer</li>
@@ -255,9 +242,8 @@ export default function Home() {
               <h3>Tim Rochford</h3>
               <p className="trainer-card__bio">
                 Tim holds an M.S. in Exercise Science–Kinesiology and brings
-                extensive experience in functional training, resistance training,
-                golf fitness, martial arts, and kickboxing. His approachable
-                coaching adapts to a wide range of goals and ability levels.
+                deep experience in functional training, golf fitness, martial arts,
+                and kickboxing.
               </p>
               <ul className="credential-list" aria-label="Tim Rochford certifications">
                 <li>CAFS &amp; Functional Golf Training Specialist</li>
@@ -276,10 +262,6 @@ export default function Home() {
             <div>
               <p className="eyebrow">Community trust</p>
               <h2>Trusted by our local community.</h2>
-            </div>
-            <div className="neighborhood-badge">
-              <strong>2024</strong>
-              <span>Neighborhood Favorite</span>
             </div>
           </div>
 
@@ -306,9 +288,8 @@ export default function Home() {
           <p className="eyebrow">Ready to get started?</p>
           <h2>Let’s find the right starting point.</h2>
           <p>
-            Tell us what you would like to improve, ask your questions, and learn
-            which program best fits your goals. The call is free and takes about
-            15 minutes.
+            Tell us your goals, ask questions, and find the right starting point
+            in a free 15-minute call.
           </p>
           <div className="button-row button-row--contact">
             <a className="button button--gold" href={bookingUrl}>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./site-header.css";
 
 export const metadata: Metadata = {
   title: "InBody 380 & Grip Strength Testing | SaddleBrooke Strength",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "InBody 380 & Grip Strength Testing | SaddleBrooke Strength",
     description: "Track body composition and grip strength together in one $25 appointment.",
-    url: "https://saddlebrooke-inbody.abelmacias520.chatgpt.site",
+    url: "https://saddlebrookestrength.com/inbody-testing",
     siteName: "SaddleBrooke Strength",
     images: [{ url: "https://saddlebrooke-inbody.abelmacias520.chatgpt.site/og.png", width: 1730, height: 909, alt: "InBody Testing — See the progress the scale can’t show." }],
     type: "website",
@@ -19,14 +20,17 @@ export const metadata: Metadata = {
     images: ["https://saddlebrooke-inbody.abelmacias520.chatgpt.site/og.png"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/sbs-icon.webp",
+    shortcut: "/sbs-icon.webp",
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="codex-preview" content="development" />
+      </head>
       <body>{children}</body>
     </html>
   );

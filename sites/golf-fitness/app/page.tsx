@@ -1,5 +1,1 @@
-import { redirect } from "next/navigation";
-
-export default function Home() {
-  redirect("/golf-fitness");
-}
+export { default } from "./golf-fitness/page";

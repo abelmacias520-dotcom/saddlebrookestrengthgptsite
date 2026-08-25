@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteHeader from "../SiteHeader";
 
 const benefits = [
   {
@@ -33,11 +34,11 @@ const fitList = [
 export const metadata: Metadata = {
   title: "Golf Fitness Program | Saddlebrooke Strength",
   description:
-    "Personalized golf-fitness training for adults 55+ in SaddleBrooke, built around mobility, balance, strength, rotational control, and endurance.",
+    "Personalized golf-fitness training in SaddleBrooke, built around mobility, balance, strength, rotational control, and endurance.",
   openGraph: {
     title: "Move Better. Swing Stronger. Keep Playing.",
     description: "Golf Fitness at Saddlebrooke Strength",
-    url: "https://saddlebrooke-golf-fitness.abelmacias520.chatgpt.site/golf-fitness",
+    url: "https://saddlebrookestrength.com/golf-fitness",
     images: [
       {
         url: "https://saddlebrooke-golf-fitness.abelmacias520.chatgpt.site/golf-fitness-hero-male.png",
@@ -63,12 +64,12 @@ export default function GolfFitnessPage() {
     "@type": "Service",
     name: "Golf Fitness Program",
     description:
-      "Personalized golf-fitness training for adults 55+, built around mobility, balance, strength, rotational control, and endurance.",
+      "Personalized golf-fitness training built around mobility, balance, strength, rotational control, and endurance.",
     serviceType: "Golf fitness training",
     url: "https://saddlebrookestrength.com/golf-fitness",
     audience: {
       "@type": "Audience",
-      audienceType: "Adults 55+",
+      audienceType: "Golfers seeking individualized fitness training",
     },
     areaServed: [
       { "@type": "Place", name: "SaddleBrooke, Arizona" },
@@ -98,31 +99,7 @@ export default function GolfFitnessPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
-      <header className="site-header">
-        <a
-          className="brand"
-          href="https://saddlebrookestrength.com/"
-          aria-label="Saddlebrooke Strength home"
-        >
-          <img
-            src="/sbs-icon.webp"
-            alt="Saddlebrooke Strength SBS icon"
-          />
-          <span>Strength • Balance • Independence</span>
-        </a>
-        <nav aria-label="Primary navigation">
-          <a href="https://saddlebrookestrength.com/#about">About</a>
-          <a href="https://saddlebrookestrength.com/#programs">Programs</a>
-          <a href="https://saddlebrookestrength.com/#reviews">Reviews</a>
-          <a href="https://saddlebrookestrength.com/#contact">Contact</a>
-          <a
-            className="nav-button"
-            href="https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7"
-          >
-            Book a Phone Call
-          </a>
-        </nav>
-      </header>
+      <SiteHeader currentPage="golf-fitness" />
 
       <div className="breadcrumb" aria-label="Breadcrumb">
         <a href="https://saddlebrookestrength.com/">Home</a>
@@ -154,7 +131,7 @@ export default function GolfFitnessPage() {
                 className="button button-primary"
                 href="https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7"
               >
-                Book a Phone Call
+                Schedule a Free 15-Minute Call
               </a>
               <a className="call-link" href="tel:+12624504794">
                 Call Saddlebrooke Strength <span aria-hidden="true">→</span>
@@ -276,7 +253,7 @@ export default function GolfFitnessPage() {
               className="button button-light"
               href="https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7"
             >
-              Book a Phone Call
+              Schedule a Free 15-Minute Call
             </a>
             <a className="footer-call" href="tel:+12624504794">
               Call Saddlebrooke Strength

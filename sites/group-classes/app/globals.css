@@ -6,6 +6,7 @@
   --forest: #0e3326;
   --green: #1a4d3a;
   --gold: #c9a227;
+  --gold-ink: #806306;
   --gold-light: #dbb94e;
   --ink: #333333;
   --line: rgba(14, 51, 38, 0.15);
@@ -20,6 +21,8 @@ body {
   background: var(--cream);
   color: var(--ink);
   font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -39,7 +42,7 @@ img { display: block; max-width: 100%; }
   gap: 13px;
   background: var(--forest);
   color: #fff;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -50,7 +53,7 @@ img { display: block; max-width: 100%; }
   border-radius: 3px;
   background: var(--gold);
   color: var(--forest);
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -93,14 +96,14 @@ img { display: block; max-width: 100%; }
 .nav-feature { border-bottom: 2px solid var(--gold); }
 
 .button {
-  min-height: 48px;
+  min-height: 50px;
   padding: 0 23px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.11em;
   line-height: 1.2;
@@ -120,8 +123,8 @@ img { display: block; max-width: 100%; }
 
 .eyebrow {
   margin: 0;
-  color: var(--gold);
-  font-size: 11px;
+  color: var(--gold-ink);
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -449,7 +452,7 @@ footer {
   justify-content: space-between;
   background: #fff;
   color: var(--green);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -519,7 +522,7 @@ footer {
   padding: 8px 0;
   border-bottom: 1px solid rgba(219, 185, 78, 0.48);
   color: var(--gold-light);
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -553,7 +556,7 @@ footer {
 .lineup-card > p {
   margin: 0 0 17px;
   color: var(--green);
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -569,7 +572,7 @@ footer {
 }
 
 .lineup-card > div span {
-  color: var(--gold);
+  color: var(--gold-ink);
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 19px;
   font-weight: 600;
@@ -586,7 +589,7 @@ footer {
   display: block;
   margin-top: 7px;
   color: #686868;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.06em;
 }
 
@@ -604,8 +607,8 @@ footer {
 }
 
 .class-jump-inner span {
-  color: #777;
-  font-size: 9px;
+  color: #5f675f;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -656,7 +659,7 @@ footer {
   border-left: 3px solid var(--gold);
   background: var(--forest);
   color: #fff;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -673,7 +676,7 @@ footer {
 
 .detail-copy h2 em {
   display: block;
-  color: var(--gold);
+  color: var(--gold-ink);
   font-weight: 500;
 }
 
@@ -709,8 +712,8 @@ footer {
 }
 
 .class-facts span {
-  color: #858585;
-  font-size: 9px;
+  color: #5f675f;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -718,7 +721,7 @@ footer {
 
 .class-facts strong {
   color: var(--green);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -735,7 +738,7 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 9px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.55;
 }
 
@@ -771,8 +774,8 @@ footer {
 
 .coach-note p span {
   margin-top: 5px;
-  color: #777;
-  font-size: 16px;
+  color: #5f675f;
+  font-size: 17px;
   line-height: 1.5;
 }
 
@@ -803,6 +806,8 @@ footer {
 .jiu-jitsu-detail .detail-copy h2,
 .jiu-jitsu-detail .detail-subhead,
 .jiu-jitsu-detail .class-facts strong { color: #fff; }
+
+.jiu-jitsu-detail .detail-copy h2 em { color: var(--gold-light); }
 
 .jiu-jitsu-detail .class-facts {
   border-color: rgba(255, 255, 255, 0.14);
@@ -856,7 +861,7 @@ footer {
 .compare-grid article:first-child { border-right: 1px solid var(--line); }
 
 .compare-number {
-  color: var(--gold);
+  color: var(--gold-ink);
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 24px;
   font-weight: 600;
@@ -889,7 +894,7 @@ footer {
   position: relative;
   padding: 10px 0 10px 20px;
   border-bottom: 1px solid rgba(14, 51, 38, 0.09);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.55;
 }
 
@@ -906,13 +911,13 @@ footer {
 
 .compare-grid article > a {
   color: var(--green);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-.compare-grid article > a span { color: var(--gold); }
+.compare-grid article > a span { color: var(--gold-ink); }
 
 .classes-faq {
   padding: 116px 0;
@@ -976,8 +981,8 @@ footer {
   max-width: 650px;
   margin: -4px 0 0;
   padding: 0 46px 25px 0;
-  color: #666;
-  font-size: 17px;
+  color: #525b55;
+  font-size: 18px;
   line-height: 1.75;
 }
 
@@ -1053,8 +1058,8 @@ footer {
 
 .contact-band-grid span {
   margin-bottom: 12px;
-  color: var(--gold);
-  font-size: 9px;
+  color: var(--gold-ink);
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -1065,7 +1070,7 @@ footer {
   margin: 0;
   color: var(--green);
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.35;
   overflow-wrap: anywhere;
@@ -1073,8 +1078,8 @@ footer {
 
 .contact-band-grid small {
   margin-top: 7px;
-  color: #777;
-  font-size: 13px;
+  color: #5f675f;
+  font-size: 15px;
   line-height: 1.55;
 }
 
@@ -1109,7 +1114,7 @@ footer {
     justify-content: flex-start;
     gap: 8px;
     padding-inline: 18px;
-    font-size: 9px;
+    font-size: 15px;
     letter-spacing: 0.04em;
   }
   .announcement-link { display: none; }

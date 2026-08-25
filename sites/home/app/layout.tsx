@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./site-header.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -40,6 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="codex-preview" content="development" />
+      </head>
       <body>{children}</body>
     </html>
   );

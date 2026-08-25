@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteHeader from "../SiteHeader";
 
 const setmoreHome =
   "https://saddlebrookestrength.setmore.com/services/ad071c58-8e9d-4d63-bfc9-d6c9208b86b7";
@@ -51,21 +52,7 @@ export default function GroupClasses() {
         <span className="announcement-link">Reserve your spot →</span>
       </a>
 
-      <header className="site-header group-page-header">
-        <a className="wordmark" href="/" aria-label="SaddleBrooke Strength home">
-          SaddleBrooke Strength
-        </a>
-        <nav aria-label="Main navigation">
-          <a href="/">Home</a>
-          <a href="/#programs">Programs</a>
-          <a className="nav-feature" href="/group-classes" aria-current="page">Classes</a>
-          <a href="/#reviews">Reviews</a>
-          <a href="/#contact">Contact</a>
-        </nav>
-        <a className="button button-gold header-button" href={setmoreHome}>
-          Book a phone call
-        </a>
-      </header>
+      <SiteHeader currentPage="group-classes" />
 
       <section className="group-hero">
         <img
@@ -80,8 +67,7 @@ export default function GroupClasses() {
             <h1>Group Classes at <em>SaddleBrooke Strength</em></h1>
             <p className="hero-lead">
               Build fitness, coordination, confidence, and new skills in a
-              welcoming, coach-led setting. Both classes are beginner-friendly,
-              and your first class is free.
+              welcoming, beginner-friendly class.
             </p>
             <div className="hero-actions">
               <a className="button button-gold" href="#cardio-kickboxing">
@@ -216,36 +202,32 @@ export default function GroupClasses() {
         <div className="content-width">
           <div className="compare-heading">
             <p className="eyebrow">Find your fit</p>
-            <h2 id="compare-title">Which Class Is Right for You?</h2>
+            <h2 id="compare-title">Choose your class.</h2>
             <p>
-              Both classes welcome beginners. Choose the experience that sounds
-              most like you—or try both before deciding.
+              Both welcome beginners. Pick the experience that sounds most like
+              you—or try both.
             </p>
           </div>
 
           <div className="compare-grid">
             <article>
               <span className="compare-number">01</span>
-              <p className="compare-kicker">Choose this for an upbeat workout</p>
               <h3>Cardio Kickboxing</h3>
               <ul>
-                <li>Cardiovascular conditioning</li>
-                <li>Punching and kicking combinations</li>
-                <li>Pad work without sparring</li>
-                <li>Endurance, coordination, and agility</li>
+                <li>Upbeat conditioning</li>
+                <li>Pad work, no sparring</li>
+                <li>Thursday · 10:00 AM</li>
               </ul>
               <a href={cardioBooking}>Reserve Cardio Kickboxing <span aria-hidden="true">→</span></a>
             </article>
 
             <article>
               <span className="compare-number">02</span>
-              <p className="compare-kicker">Choose this for a new skill</p>
               <h3>Ageless Jiu-Jitsu</h3>
               <ul>
-                <li>A physical and mental challenge</li>
-                <li>Practical martial arts skills</li>
-                <li>Balance, mobility, and body awareness</li>
-                <li>Progressive, supportive instruction</li>
+                <li>New skills, balance &amp; mobility</li>
+                <li>Technique-focused practice</li>
+                <li>Thursday · 5:00 PM</li>
               </ul>
               <a href={jiuJitsuBooking}>Try Ageless Jiu-Jitsu <span aria-hidden="true">→</span></a>
             </article>
@@ -265,10 +247,6 @@ export default function GroupClasses() {
           </div>
 
           <div className="faq-list">
-            <details open>
-              <summary>Do I need martial arts experience?</summary>
-              <p>No. Both classes are designed to welcome complete beginners.</p>
-            </details>
             <details>
               <summary>Is there sparring in Cardio Kickboxing?</summary>
               <p>No. You&apos;ll work with pads and mitts—not strike another person.</p>
@@ -296,8 +274,7 @@ export default function GroupClasses() {
           <p className="eyebrow eyebrow-light">Your first class is free</p>
           <h2 id="final-cta-title">Try Something New This Thursday</h2>
           <p>
-            Meet a supportive group, move with confidence, and discover which
-            class feels right for you.
+            Try one—or both—and see what feels right for you.
           </p>
           <div>
             <a className="button button-gold" href={cardioBooking}>Reserve Cardio Kickboxing</a>
@@ -324,7 +301,7 @@ export default function GroupClasses() {
           </div>
           <div>
             <span>Not ready for a class?</span>
-            <a href={setmoreHome}>Book a phone call →</a>
+            <a href={setmoreHome}>Schedule a Free 15-Minute Call →</a>
             <small>Talk through your goals first</small>
           </div>
         </div>

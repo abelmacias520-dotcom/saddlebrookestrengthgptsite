@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./site-header.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   ),
   title: "Golf Fitness Program | Saddlebrooke Strength",
   description:
-    "Personalized golf-fitness training for adults 55+, built around mobility, balance, strength, rotational control, and endurance.",
+    "Personalized golf-fitness training built around mobility, balance, strength, rotational control, and endurance.",
   openGraph: {
     title: "Move Better. Swing Stronger. Keep Playing.",
     description: "Golf Fitness at Saddlebrooke Strength",
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/sbs-icon.webp",
+    shortcut: "/sbs-icon.webp",
   },
 };
 
@@ -36,6 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="codex-preview" content="development" />
+      </head>
       <body>{children}</body>
     </html>
   );
