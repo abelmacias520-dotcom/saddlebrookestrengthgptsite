@@ -238,6 +238,11 @@ export default function PersonalTrainingPage() {
                 <small>
                   Senior Fitness • Corrective Exercise • Stretch &amp; Flexibility
                 </small>
+                <p className="coach-bio">
+                  Abel builds practical programs for strength, balance,
+                  mobility, flexibility, and golf fitness. He meets each client
+                  where they are and tailors training to their goals and abilities.
+                </p>
               </div>
             </article>
 
@@ -252,6 +257,34 @@ export default function PersonalTrainingPage() {
                 <h3>Tim Rochford, MS</h3>
                 <p>NASM &amp; ACE Certified Personal Trainer</p>
                 <small>FAI Functional Aging Specialist • CAFS</small>
+                <p className="coach-bio">
+                  Tim holds an M.S. in Exercise Science–Kinesiology and brings
+                  experience in functional training and golf fitness. His
+                  coaching background also includes martial arts and kickboxing.
+                </p>
+              </div>
+            </article>
+            <article className="coach-card">
+              <img
+                className="coach-photo"
+                src="/samantha.jpg"
+                alt="Samantha Green, personal trainer at Saddlebrooke Strength"
+              />
+              <div className="coach-number">03</div>
+              <div className="coach-content">
+                <h3>Samantha Green, MS</h3>
+                <p>NSCA Certified Strength and Conditioning Specialist (CSCS)</p>
+                <p className="coach-secondary-cert">NASM Certified Personal Trainer</p>
+                <small>
+                  M.S. in Applied Physiology and Kinesiology • B.S. in Food and
+                  Nutrition Entrepreneurship
+                </small>
+                <p className="coach-bio">
+                  Born and raised in Tucson, Samantha has worked with clients
+                  from Los Angeles to Orlando and now serves SaddleBrooke. She
+                  helps older adults build strength, balance, and confidence
+                  through safe movement adapted to their abilities.
+                </p>
               </div>
             </article>
           </div>
@@ -272,6 +305,27 @@ export default function PersonalTrainingPage() {
               </li>
             ))}
           </ol>
+        </section>
+
+        <section className="training-faq" aria-labelledby="training-faq-title">
+          <p className="eyebrow eyebrow-green">Getting started</p>
+          <h2 id="training-faq-title">Your training questions, answered.</h2>
+          <details>
+            <summary>How long is a training session?</summary>
+            <p>Personal training sessions are 50 minutes.</p>
+          </details>
+          <details>
+            <summary>How often should I train?</summary>
+            <p>We discuss your goals, current activity, recovery, and schedule to recommend a frequency that fits you.</p>
+          </details>
+          <details>
+            <summary>How much does personal training cost?</summary>
+            <p>During your free introductory call, we explain the current rates and training options so you can choose what fits your goals and budget.</p>
+          </details>
+          <details>
+            <summary>What happens after the phone call?</summary>
+            <p>We help match you with a trainer and arrange your initial consultation and assessment. Together, you will establish a starting point and plan your training.</p>
+          </details>
         </section>
 
         <section className="service-cta" id="contact">

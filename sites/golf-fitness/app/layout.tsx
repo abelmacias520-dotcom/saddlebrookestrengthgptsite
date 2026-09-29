@@ -3,6 +3,7 @@ import "./globals.css";
 import "./site-header.css";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://saddlebrookestrength.com/golf-fitness" },
   metadataBase: new URL(
     "https://saddlebrooke-golf-fitness.abelmacias520.chatgpt.site",
   ),

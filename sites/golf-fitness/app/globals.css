@@ -710,3 +710,5 @@ footer span:first-child {
   html { scroll-behavior: auto; }
   .button { transition: none; }
 }
+
+section[id] { scroll-margin-top: 110px; }

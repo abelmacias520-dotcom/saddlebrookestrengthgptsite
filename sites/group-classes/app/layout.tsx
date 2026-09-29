@@ -3,6 +3,7 @@ import "./globals.css";
 import "./site-header.css";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://saddlebrookestrength.com/group-classes" },
   metadataBase: new URL("https://cardio-kickboxing-mockup.abelmacias520.chatgpt.site"),
   title: "Group Classes | SaddleBrooke Strength",
   description:

@@ -99,6 +99,10 @@ export default function SiteHeader({ currentPage }: { currentPage: SitePage }) {
               ))}
             </nav>
 
+            <a className="sbs-menu-trainers" href="https://saddlebrookestrength.com/#trainers" onClick={closeMenu}>
+              Meet Our Trainers
+            </a>
+
             <div className="sbs-menu-actions">
               <a href="https://saddlebrookestrength.com/#reviews" onClick={closeMenu}>Reviews</a>
               <a href="https://saddlebrookestrength.com/#contact" onClick={closeMenu}>Contact</a>

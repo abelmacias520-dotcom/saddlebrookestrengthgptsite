@@ -3,6 +3,7 @@ import "./globals.css";
 import "./site-header.css";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://saddlebrookestrength.com/inbody-testing" },
   title: "InBody 380 & Grip Strength Testing | SaddleBrooke Strength",
   description: "Get an InBody 380 body composition test with included InGrip strength testing at SaddleBrooke Strength in Tucson, Arizona.",
   openGraph: {

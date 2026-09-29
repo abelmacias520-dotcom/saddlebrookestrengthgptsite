@@ -963,3 +963,6 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+.trainer-card__content > .text-link { margin-top: 22px; align-self: flex-start; }
+section[id] { scroll-margin-top: 110px; }

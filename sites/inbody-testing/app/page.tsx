@@ -61,6 +61,10 @@ export default function Home() {
             <a className="button button-secondary" href="tel:+12624504794">Call (262) 450-4794</a>
           </div>
 
+          <p className="prep-reminder">
+            <a href="#test-preparation">Read the preparation guidelines before choosing your appointment.</a>
+          </p>
+
           <div className="price-line">
             <strong>$25</strong>
             <span>includes InBody 380 + InGrip</span>
@@ -161,7 +165,7 @@ export default function Home() {
             <summary>What happens during the 5-minute appointment?<span>+</span></summary>
             <p>Remove your shoes and socks, complete the InBody and InGrip measurements, then review the key results with Abel.</p>
           </details>
-          <details>
+          <details id="test-preparation" open>
             <summary>How should I prepare?<span>+</span></summary>
             <ul className="faq-prep-list">
               <li>Do not eat for at least three hours beforehand.</li>

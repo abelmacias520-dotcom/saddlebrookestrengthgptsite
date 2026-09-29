@@ -199,7 +199,8 @@ export default function Home() {
           <p className="eyebrow eyebrow--gold">Meet your trainers</p>
           <h2>Experienced coaching. Personal attention.</h2>
           <p>
-            Personal attention from two experienced trainers.
+            Meet our coaching team. Your introductory call helps us match you
+            with the right trainer for your goals and schedule.
           </p>
         </div>
 
@@ -251,6 +252,34 @@ export default function Home() {
                 <li>ACE &amp; NASM Certified Personal Trainer</li>
                 <li>Seventh-Degree Black Belt in Kajukenbo</li>
               </ul>
+            </div>
+          </article>
+          <article className="trainer-card">
+            <div className="trainer-card__image-wrap">
+              <img
+                className="trainer-card__image"
+                src="/samantha.jpg"
+                alt="Samantha Green, personal trainer at Saddlebrooke Strength"
+              />
+            </div>
+            <div className="trainer-card__content">
+              <p className="trainer-card__role">Personal Trainer</p>
+              <h3>Samantha Green</h3>
+              <p className="trainer-card__bio">
+                Born and raised in Tucson, Samantha has worked with clients from
+                Los Angeles to Orlando and is proud to serve the SaddleBrooke
+                community. She specializes in strength, balance, and safe
+                movement for older adults. She meets you where you are, adapts
+                for any limitation, and helps you build confidence one session
+                at a time.
+              </p>
+              <ul className="credential-list" aria-label="Samantha Green education and certification">
+                <li>M.S. in Applied Physiology and Kinesiology</li>
+                <li>NSCA Certified Strength and Conditioning Specialist (CSCS)</li>
+                <li>NASM Certified Personal Trainer</li>
+                <li>B.S. in Food and Nutrition Entrepreneurship</li>
+              </ul>
+              <a className="text-link" href={bookingUrl}>Ask about training with Samantha</a>
             </div>
           </article>
         </div>
@@ -334,6 +363,7 @@ export default function Home() {
               <br />
               Tucson, AZ 85739
             </span>
+            <a href="https://www.google.com/maps/search/?api=1&query=64485+East+SaddleBrooke+Boulevard%2C+Tucson%2C+AZ%2C+85739">Get directions</a>
           </address>
         </div>
         <p className="site-footer__copyright">© 2026 Saddlebrooke Strength</p>

@@ -131,8 +131,10 @@ export default function GroupClasses() {
 
             <div className="class-facts">
               <div><span>When</span><strong>Thursdays · 10:00 AM</strong></div>
+              <div><span>Length</span><strong>50 minutes</strong></div>
               <div><span>Where</span><strong>HOA One Aerobics Room</strong></div>
               <div><span>First visit</span><strong>Your first class is free</strong></div>
+              <div><span>Drop-in</span><strong>$15 per drop-in</strong></div>
             </div>
 
             <ul className="benefit-list">
@@ -180,8 +182,10 @@ export default function GroupClasses() {
 
             <div className="class-facts">
               <div><span>When</span><strong>Thursdays · 5:00 PM</strong></div>
+              <div><span>Length</span><strong>60 minutes</strong></div>
               <div><span>Where</span><strong>HOA One Aerobics Room</strong></div>
               <div><span>First visit</span><strong>Your first class is free</strong></div>
+              <div><span>Drop-in</span><strong>$20 per drop-in</strong></div>
             </div>
 
             <ul className="benefit-list">
@@ -190,6 +194,11 @@ export default function GroupClasses() {
               <Benefit>Practical skills taught at a comfortable pace</Benefit>
               <Benefit>A welcoming, supportive small group</Benefit>
             </ul>
+
+            <div className="coach-note">
+              <span className="monogram" aria-hidden="true">AM</span>
+              <p><strong>Led by Abel Macias</strong><span>Ageless Jiu-Jitsu coach</span></p>
+            </div>
 
             <a className="button button-gold detail-button" href={jiuJitsuBooking}>
               Try Ageless Jiu-Jitsu free
@@ -248,6 +257,14 @@ export default function GroupClasses() {
 
           <div className="faq-list">
             <details>
+              <summary>Does Ageless Jiu-Jitsu include floor work?</summary>
+              <p>
+                Yes. We practice partner techniques on the mat. If getting down
+                to or up from the floor is a concern, call Abel before booking
+                so you can discuss whether the class fits your needs.
+              </p>
+            </details>
+            <details>
               <summary>Is there sparring in Cardio Kickboxing?</summary>
               <p>No. You&apos;ll work with pads and mitts—not strike another person.</p>
             </details>
@@ -298,6 +315,7 @@ export default function GroupClasses() {
           <div>
             <span>Location</span>
             <p>64485 E Saddlebrooke Blvd<br />Tucson, AZ 85739</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=64485+East+SaddleBrooke+Boulevard%2C+Tucson%2C+AZ%2C+85739">Get directions</a>
           </div>
           <div>
             <span>Not ready for a class?</span>

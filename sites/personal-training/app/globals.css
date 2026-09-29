@@ -519,12 +519,24 @@ em {
   text-transform: uppercase;
 }
 
+.coach-content p.coach-secondary-cert { margin-top: 0.35rem; }
+
 .coach-content small {
   display: block;
   margin-top: 0.65rem;
   color: var(--muted);
   font-size: 1.1rem;
   line-height: 1.7;
+}
+
+.coach-content p.coach-bio {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.7;
+  text-transform: none;
 }
 
 .training-section {
@@ -767,10 +779,11 @@ footer span:first-child {
   .coaches-section,
   .training-section { padding: 5rem 1.25rem; }
   .coach-card {
-    grid-template-columns: 82px 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1.25rem;
   }
+  .coach-photo { width: min(100%, 190px); }
   .coach-number { display: none; }
   .service-cta { margin: 0 0.8rem; padding: 2.5rem 1.35rem; }
   .button-light { white-space: normal; text-align: center; }
@@ -782,3 +795,10 @@ footer span:first-child {
   html { scroll-behavior: auto; }
   .button { transition: none; }
 }
+
+.training-faq { max-width: 1160px; margin: 0 auto; padding: 4rem 2rem; }
+.training-faq h2 { color: var(--forest); font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.15; }
+.training-faq details { border-bottom: 1px solid var(--line); padding: 1.2rem 0; }
+.training-faq summary { cursor: pointer; color: var(--forest); font-size: 1.125rem; font-weight: 700; }
+.training-faq details p { max-width: 780px; margin-bottom: 0; font-size: 1.125rem; }
+@media (max-width: 760px) { .training-faq { padding: 3rem 1.25rem; } }

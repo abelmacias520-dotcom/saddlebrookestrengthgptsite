@@ -10,7 +10,7 @@ const benefits = [
   {
     number: "02",
     title: "Rotate with control",
-    copy: "Develop golf-relevant strength through the legs, hips, and trunk.",
+    copy: "Build strength and rotational power through the legs, hips, and trunk to support clubhead speed.",
   },
   {
     number: "03",

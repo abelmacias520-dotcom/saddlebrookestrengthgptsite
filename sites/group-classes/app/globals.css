@@ -1223,3 +1223,14 @@ footer {
   html { scroll-behavior: auto; }
   .button { transition: none; }
 }
+
+/* Match booking readability to the rest of the site. */
+.classes-page .button, .classes-page .compare-grid article > a { font-size: 1.0625rem; letter-spacing: 0.015em; text-transform: none; line-height: 1.4; text-align: center; }
+.classes-page .text-link { font-size: 1rem; letter-spacing: 0.015em; text-transform: none; }
+.jiu-jitsu-detail .coach-note strong { color: #fff; }
+.jiu-jitsu-detail .coach-note p span { color: #e0e8e2; }
+.jiu-jitsu-detail .class-facts span { color: #d6dfd9; }
+.class-facts div { align-items: start; }
+.class-facts span { max-width: 12rem; }
+section[id], .lineup-card[id] { scroll-margin-top: 120px; }
+@media (max-width: 420px) { .class-facts div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
